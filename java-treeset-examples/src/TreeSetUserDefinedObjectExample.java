@@ -3,11 +3,11 @@ import java.util.Objects;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-class Employee implements Comparable<Employee> {
+class Employee3 implements Comparable<Employee3> {
     private int id;
     private String name;
 
-    public Employee(int id, String name) {
+    public Employee3(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -33,7 +33,7 @@ class Employee implements Comparable<Employee> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
+        Employee3 employee = (Employee3) o;
         return id == employee.id;
     }
 
@@ -44,7 +44,7 @@ class Employee implements Comparable<Employee> {
 
     // Compare employees based on their IDs
     @Override
-    public int compareTo(Employee employee) {
+    public int compareTo(Employee3 employee) {
         return this.getId() - employee.getId();
     }
 
@@ -70,22 +70,22 @@ public class TreeSetUserDefinedObjectExample {
            2. Or you should provide a custom Comparator while creating the TreeSet.
         */
 
-        SortedSet<Employee> employees = new TreeSet<>();
+        SortedSet<Employee3> employees = new TreeSet<>();
 
         // TreeSet uses the compareTo() method of the Employee class to compare two employees and sort them
-        employees.add(new Employee(1010, "Rajeev"));
-        employees.add(new Employee(1005, "Sachin"));
-        employees.add(new Employee(1008, "Chris"));
+        employees.add(new Employee3(1010, "Rajeev"));
+        employees.add(new Employee3(1005, "Sachin"));
+        employees.add(new Employee3(1008, "Chris"));
 
         System.out.println("Employees (sorted based on Employee class's compareTo() function)");
         System.out.println(employees);
 
         // Providing a Custom Comparator (This comparator compares the employees based on their Name)
-        employees = new TreeSet<>(Comparator.comparing(Employee::getName));
+        employees = new TreeSet<>(Comparator.comparing(Employee3::getName));
 
-        employees.add(new Employee(1010, "Rajeev"));
-        employees.add(new Employee(1005, "Sachin"));
-        employees.add(new Employee(1008, "Chris"));
+        employees.add(new Employee3(1010, "Rajeev"));
+        employees.add(new Employee3(1005, "Sachin"));
+        employees.add(new Employee3(1008, "Chris"));
 
         System.out.println("\nEmployees (sorted based on the supplied Comparator)");
         System.out.println(employees);

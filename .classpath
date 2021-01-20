@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="java-arraylist-examples/src"/>
+	<classpathentry kind="src" path="java-comparable-comparator-examples/src"/>
+	<classpathentry kind="src" path="java-hashmap-examples/src"/>
+	<classpathentry kind="src" path="java-hashset-examples/src"/>
+	<classpathentry kind="src" path="java-linkedhashmap-examples/src"/>
+	<classpathentry kind="src" path="java-linkedlist-examples/src"/>
+	<classpathentry kind="src" path="java-priority-queue-examples/src"/>
+	<classpathentry kind="src" path="java-queue-examples/src"/>
+	<classpathentry kind="src" path="java-stack-examples/src"/>
+	<classpathentry kind="src" path="java-treemap-examples/src"/>
+	<classpathentry kind="src" path="java-treeset-examples/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

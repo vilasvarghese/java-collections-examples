@@ -1,12 +1,12 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Employee {
+class Employee2 {
     private Integer id;
     private String name;
     private String city;
 
-    public Employee(Integer id, String name, String city) {
+    public Employee2(Integer id, String name, String city) {
         this.id = id;
         this.name = name;
         this.city = city;
@@ -48,10 +48,10 @@ class Employee {
 public class HashMapUserDefinedObjectExample {
     public static void main(String[] args) {
 
-        Map<Integer, Employee> employeesMap = new HashMap<>();
-        employeesMap.put(1001, new Employee(1001, "Rajeev", "Bengaluru"));
-        employeesMap.put(1002, new Employee(1002, "David", "New York"));
-        employeesMap.put(1003, new Employee(1003, "Jack", "Paris"));
+        Map<Integer, Employee2> employeesMap = new HashMap<>();
+        employeesMap.put(1001, new Employee2(1001, "Rajeev", "Bengaluru"));
+        employeesMap.put(1002, new Employee2(1002, "David", "New York"));
+        employeesMap.put(1003, new Employee2(1003, "Jack", "Paris"));
 
         System.out.println(employeesMap);
     }

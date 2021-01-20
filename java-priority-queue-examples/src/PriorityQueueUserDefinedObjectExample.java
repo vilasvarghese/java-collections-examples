@@ -1,11 +1,11 @@
 import java.util.Objects;
 import java.util.PriorityQueue;
 
-class Employee implements Comparable<Employee> {
+class Employee1 implements Comparable<Employee1> {
     private String name;
     private double salary;
 
-    public Employee(String name, double salary) {
+    public Employee1(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
@@ -30,7 +30,7 @@ class Employee implements Comparable<Employee> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
+        Employee1 employee = (Employee1) o;
         return Double.compare(employee.salary, salary) == 0 &&
                 Objects.equals(name, employee.name);
     }
@@ -50,7 +50,7 @@ class Employee implements Comparable<Employee> {
 
     // Compare two employee objects by their salary
     @Override
-    public int compareTo(Employee employee) {
+    public int compareTo(Employee1 employee) {
         if(this.getSalary() > employee.getSalary()) {
             return 1;
         } else if (this.getSalary() < employee.getSalary()) {
@@ -73,13 +73,13 @@ public class PriorityQueueUserDefinedObjectExample {
         */
 
         // Create a PriorityQueue
-        PriorityQueue<Employee> employeePriorityQueue = new PriorityQueue<>();
+        PriorityQueue<Employee1> employeePriorityQueue = new PriorityQueue<>();
 
         // Add items to the Priority Queue
-        employeePriorityQueue.add(new Employee("Rajeev", 100000.00));
-        employeePriorityQueue.add(new Employee("Chris", 145000.00));
-        employeePriorityQueue.add(new Employee("Andrea", 115000.00));
-        employeePriorityQueue.add(new Employee("Jack", 167000.00));
+        employeePriorityQueue.add(new Employee1("Rajeev", 100000.00));
+        employeePriorityQueue.add(new Employee1("Chris", 145000.00));
+        employeePriorityQueue.add(new Employee1("Andrea", 115000.00));
+        employeePriorityQueue.add(new Employee1("Jack", 167000.00));
 
 
         /*
